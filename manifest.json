@@ -1,0 +1,44 @@
+{
+  "name": "RP Cozy",
+  "id": "rpcozy",
+  "description": {
+    "en": "CozyCloud via Yunohost",
+    "fr": "CozyCloud depuis Yunohost"
+  },
+  "developer": {
+    "name": "Adrienb",
+    "email": "adrien.b@a2i-web.net",
+    "url": "http://www.abhd.tk"
+  },
+  "multi_instance": "false",
+  "arguments": {
+    "install": [
+      {
+        "name": "domain",
+        "ask": {
+          "en": "Choose a domain for access to your Cozy Server"
+		  "fr": "Choisissez un domaine pour accéder à votre serveur Cozy"
+        },
+        "example": "domain.org"
+      },
+      {
+        "name": "path",
+        "ask": {
+          "en": "Choose a path for your Cozy Server"
+		  "fr": "Choisissez un dossier pour votre serveur Cozy"
+        },
+        "example": "/",
+        "default": "/"
+      },
+      {
+        "name": "server",
+        "ask": {
+          "en": "Choose IP where your Cozy server is installed"
+		  "fr": "Précisez l'adresse IP ou votre serveur Cozy est installé"
+        },
+        "example": "127.0.0.1",
+        "default": "127.0.0.1"
+      }
+    ]
+  }
+}
